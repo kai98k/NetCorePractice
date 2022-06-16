@@ -15,6 +15,8 @@ namespace NetCorePractice.Controllers
 
         public IActionResult Index()
         {
+            ViewBag.NowTime = DateTime.Now.ToString("HH:mm:ss");
+            ViewBag.Message = "Hello World. This is a.";
             return View();
         }
 
