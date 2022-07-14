@@ -7,6 +7,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using dotnet3xmvc.Models;
+using Microsoft.EntityFrameworkCore;
+
 
 namespace dotnet3xmvc
 {
@@ -23,6 +26,7 @@ namespace dotnet3xmvc
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddTransient<dbContext>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

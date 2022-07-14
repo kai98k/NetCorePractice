@@ -20,6 +20,7 @@ namespace dotnet3xmvc.Controllers
 
         public IActionResult Index()
         {
+            
             return View();
         }
 
